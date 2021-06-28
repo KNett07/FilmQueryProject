@@ -110,7 +110,6 @@ public class FilmQueryApp {
 
 		input.nextLine();
 		String keyword = input.nextLine();
-		boolean validSearch = true;
 		List<Film> film = db.findFilmByKeyword(keyword);
 		if (film.size() != 0) {
 			System.out.println(film);
